@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "@playwright/test": "^1.29.1"
+    "@playwright/test": "^1.29.1",
+    "artillery": "^2.0.0-27",
+    "artillery-engine-playwright": "^0.2.1"
   },
   "scripts": {}
 }

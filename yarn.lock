@@ -1632,6 +1632,14 @@ arrivals@^2.1.2:
     debug "^4.0.1"
     nanotimer "0.3.14"
 
+artillery-engine-playwright@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/artillery-engine-playwright/-/artillery-engine-playwright-0.2.1.tgz#83f728a3773f09c249e06e6e903585ee683b6a5b"
+  integrity sha512-wDlkv4xrqrWA5Y9gE/VvmtuEL8H9wJLobKv7QMHL5iWagOvlWO5gKQNMqFa867/nZsZzCxpWMsQDjpVUQze9YA==
+  dependencies:
+    debug "^4.3.2"
+    playwright "^1.25.1"
+
 artillery-plugin-ensure@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/artillery-plugin-ensure/-/artillery-plugin-ensure-1.1.1.tgz#d4e516811d19e8f982ae1d3d78406c063b025ec9"
@@ -4948,6 +4956,13 @@ playwright-core@1.29.1:
   version "1.29.1"
   resolved "https://registry.yarnpkg.com/playwright-core/-/playwright-core-1.29.1.tgz#9ec15d61c4bd2f386ddf6ce010db53a030345a47"
   integrity sha512-20Ai3d+lMkWpI9YZYlxk8gxatfgax5STW8GaMozAHwigLiyiKQrdkt7gaoT9UQR8FIVDg6qVXs9IoZUQrDjIIg==
+
+playwright@^1.25.1:
+  version "1.29.1"
+  resolved "https://registry.yarnpkg.com/playwright/-/playwright-1.29.1.tgz#fc04b34f42e3bfc0edadb1c45ef9bffd53c21f70"
+  integrity sha512-lasC+pMqsQ2uWhNurt3YK3xo0gWlMjslYUylKbHcqF/NTjwp9KStRGO7S6wwz2f52GcSnop8XUK/GymJjdzrxw==
+  dependencies:
+    playwright-core "1.29.1"
 
 posthog-node@^1.3.0:
   version "1.3.0"
