@@ -1,0 +1,10 @@
+{
+  "name": "kancolle-perf-testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.29.1"
+  },
+  "scripts": {}
+}
