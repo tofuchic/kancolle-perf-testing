@@ -8,6 +8,10 @@ async function helloKancolle(page) {
   await page.getByRole('link', { name: '2022年11月号' }).click();
   await page.getByRole('link', { name: 'ログインしてみかんをレビューしよう' }).click();
   await page.getByRole('button', { name: 'Twitterでログイン' }).click();
+  const response1 = await page.waitForNavigation();
+  await page.goto(response1._request._initializer.url)
+  const response2 = await page.waitForNavigation();
+  await page.goto(response2._request._initializer.url)
   await page.getByRole('heading', { name: 'Authorize mikancolle to access your account?' }).click();
   await page.getByRole('button', { name: 'Sign In' }).click();
   await page.getByLabel('Phone, email, or username').click();
