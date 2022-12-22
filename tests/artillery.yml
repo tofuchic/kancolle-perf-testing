@@ -2,7 +2,9 @@ config:
   target: https://tofuchic.github.io/kancolle # Playwright engine doesn't use this target
   # Enable the Playwright engine:
   engines:
-    playwright: {}
+    playwright:
+      launchOptions:
+        headless: false
   processor: "./playwright.js"
 scenarios:
   - engine: playwright
