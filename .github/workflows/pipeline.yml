@@ -24,6 +24,7 @@ jobs:
       - name: Run Artillery tests
         run: yarn test:lt tests/artillery.yml
       - name: Create Artillery reports
+        if: always()
         run: yarn report:lt test-results/test-run-report.json
       - uses: actions/upload-artifact@v3
         if: always()
