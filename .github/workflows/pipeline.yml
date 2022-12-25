@@ -17,6 +17,8 @@ jobs:
         run: yarn
       - name: Install Playwright Browsers
         run: yarn playwright install --with-deps
+      - name: Override env.csv
+        run: echo ${{ secrets.MY_TWITTER_USERID }},${{ secrets.MY_TWITTER_PASSWORD }} >! tests/env.csv
       - name: Run Artillery tests
         run: yarn test:lt tests/artillery.yml
       - name: Create Artillery reports
