@@ -1,4 +1,4 @@
-name: Playwright Tests
+name: Artillery Tests
 on:
   push:
     branches: [main, master]
@@ -17,8 +17,6 @@ jobs:
         run: yarn
       - name: Install Playwright Browsers
         run: yarn playwright install --with-deps
-      - name: Run Playwright tests
-        run: yarn playwright test
       - name: Run Artillery tests
         run: yarn test:lt tests/artillery.yml
       - name: Create Artillery reports
