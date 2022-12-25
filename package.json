@@ -8,5 +8,8 @@
     "artillery": "^2.0.0-27",
     "artillery-engine-playwright": "^0.2.1"
   },
-  "scripts": {}
+  "scripts": {
+    "test:lt": "mkdir -p ./test-results && yarn artillery run --output ./test-results/test-run-report.json",
+    "report:lt": "yarn artillery report --output ./test-results/test-run-report.html"
+  }
 }
