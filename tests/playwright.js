@@ -1,7 +1,7 @@
 module.exports = { helloKancolle };
 
-async function helloKancolle(page, userContext) {
-  await page.goto('https://tofuchic.github.io/kancolle/');
+async function helloKancolle(page, context) {
+  await page.goto(context.vars.target);
   await page.getByRole('button', { name: 'open drawer' }).click();
   await page.getByRole('link', { name: 'かんみのみかん' }).click();
   await page.locator('.MuiBackdrop-root').click();
@@ -15,9 +15,9 @@ async function helloKancolle(page, userContext) {
   await page.getByRole('heading', { name: 'Authorize mikancolle to access your account?' }).click();
   await page.getByRole('button', { name: 'Sign In' }).click();
   await page.getByLabel('Phone, email, or username').click();
-  await page.getByLabel('Phone, email, or username').fill(userContext.vars.username);
+  await page.getByLabel('Phone, email, or username').fill(context.vars.username);
   await page.getByRole('button', { name: 'Next' }).click();
-  await page.getByRole('textbox', { name: 'Password Reveal password' }).fill(userContext.vars.password);
+  await page.getByRole('textbox', { name: 'Password Reveal password' }).fill(context.vars.password);
   await page.getByTestId('LoginForm_Login_Button').click();
   await page.getByRole('button', { name: 'ログアウト' }).click();
 }

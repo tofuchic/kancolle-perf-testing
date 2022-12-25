@@ -1,5 +1,5 @@
 config:
-  target: https://tofuchic.github.io/kancolle # Playwright engine doesn't use this target
+  target: https://tofuchic.github.io/kancolle
   payload:
     - path: ./env.csv
       fields:
