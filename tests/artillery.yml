@@ -8,9 +8,9 @@ config:
   # Enable the Playwright engine:
   engines:
     playwright:
-      # Only for local debug
-      # launchOptions:
-      #   headless: false
+      # Only for local debug, set false
+      launchOptions:
+        headless: true
   processor: "./playwright.js"
 scenarios:
   - engine: playwright
