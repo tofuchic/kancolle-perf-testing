@@ -1,5 +1,9 @@
 config:
   target: https://tofuchic.github.io/kancolle
+  phases:
+    - name: "test"
+      arrivalCount: 1
+      duration: 1
   payload:
     - path: ./env.csv
       fields:
